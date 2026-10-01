@@ -1,0 +1,25 @@
+text,label
+Our finance department needs the invoice from the last billing cycle.,billing
+You deducted the monthly fee two times from my card.,billing
+How can I stop my subscription from renewing next year?,billing
+Could you explain the extra amount on our latest bill?,billing
+The card we use for payments has expired and needs replacing.,billing
+Is there a way to change from an annual to a monthly plan?,billing
+I changed phones and now cannot pass the two factor sign in step.,account_access
+There is no password reset message in my inbox or spam folder.,account_access
+How do I get back into my account if I forgot the credentials?,account_access
+My company single sign on will not let me enter the workspace.,account_access
+The verification link you emailed me has already expired.,account_access
+Can I replace the email that I use for logging in?,account_access
+"After the update, the desktop app shuts down whenever I open a file.",bug_report
+Clicking export gives a 500 error instead of a download.,bug_report
+New tasks vanish as soon as the browser page is refreshed.,bug_report
+The upload bar never moves past halfway.,bug_report
+Our charts are empty although the underlying data is present.,bug_report
+Importing a spreadsheet creates two copies of every record.,bug_report
+It would save us time if we could edit many tasks at once.,feature_request
+Would you consider building a connector for our Slack workspace?,feature_request
+I wish the product offered a guest role with no editing rights.,feature_request
+We would like the ability to send reports on a regular schedule.,feature_request
+A keyboard shortcut to create tasks would be a welcome addition.,feature_request
+Could the roadmap include a way to organize files with tags?,feature_request

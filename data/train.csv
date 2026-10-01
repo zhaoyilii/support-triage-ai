@@ -1,0 +1,81 @@
+text,label
+I was charged twice for my monthly subscription.,billing
+Please send me a copy of my latest invoice.,billing
+How do I update my billing address?,billing
+My payment failed when renewing the subscription.,billing
+Can I get a refund for an accidental purchase?,billing
+I need to change the credit card used for billing.,billing
+Why is there an unexpected charge on my invoice?,billing
+Please explain the pricing of the annual plan.,billing
+I want to cancel my paid subscription.,billing
+How can I switch to monthly billing?,billing
+My receipt shows the wrong company name.,billing
+I need help with a rejected subscription payment.,billing
+Please refund the duplicate charge on my account.,billing
+Does the subscription renew automatically each year?,billing
+Where can I download invoices for previous payments?,billing
+I was billed after canceling my plan.,billing
+How do I apply a discount code to my subscription?,billing
+Can we pay for the team plan by bank transfer?,billing
+Please help me change my subscription plan.,billing
+The renewal price is higher than the quoted price.,billing
+I forgot my password and cannot log in.,account_access
+My password reset email never arrived.,account_access
+I am locked out of my account.,account_access
+The two factor authentication code is not working.,account_access
+How can I recover access after losing my phone?,account_access
+I cannot sign in with my email and password.,account_access
+Please help me reset my account password.,account_access
+My login link has expired.,account_access
+I need to change the email address used to sign in.,account_access
+My account verification email is missing.,account_access
+I lost my authenticator app and cannot log in.,account_access
+Why does the sign in page say my password is incorrect?,account_access
+I cannot access my account after changing my email.,account_access
+How do I enable two factor authentication?,account_access
+I need help recovering my locked account.,account_access
+The login page keeps rejecting my credentials.,account_access
+I never received the email to verify my account.,account_access
+Can you help me regain access to my profile?,account_access
+I want to sign out of all active sessions.,account_access
+My single sign on login is being denied.,account_access
+The app crashes every time I upload a file.,bug_report
+My dashboard is stuck on a loading spinner.,bug_report
+Exporting a report returns an error message.,bug_report
+The search feature shows a blank page.,bug_report
+Files fail to sync between the desktop and mobile app.,bug_report
+The save button does nothing when I click it.,bug_report
+The calendar displays the wrong dates.,bug_report
+I found a bug in the report export function.,bug_report
+The mobile application freezes when opening a project.,bug_report
+The upload progress stops at fifty percent.,bug_report
+Notifications appear twice for the same event.,bug_report
+The chart does not render in my browser.,bug_report
+The application is very slow after the last update.,bug_report
+My changes disappear after I refresh the page.,bug_report
+The download button returns a server error.,bug_report
+The spreadsheet import creates duplicate rows.,bug_report
+The task list fails to load in the dashboard.,bug_report
+The app closes unexpectedly when I attach an image.,bug_report
+A broken link in the settings opens an error page.,bug_report
+The preview is blank even though the file uploaded successfully.,bug_report
+Could you add a dark mode to the application?,feature_request
+I would like a feature to schedule recurring tasks.,feature_request
+Please add an integration with Google Calendar.,feature_request
+Can you support exporting reports as PDF files?,feature_request
+It would be useful to have custom dashboard layouts.,feature_request
+I suggest adding keyboard shortcuts for common actions.,feature_request
+Could we have an option to archive old projects?,feature_request
+Please consider adding support for more languages.,feature_request
+I would love a bulk editing feature for tasks.,feature_request
+Can you add a way to share saved report templates?,feature_request
+My feature request is an offline mode for the mobile app.,feature_request
+Please add customizable email notification preferences.,feature_request
+I suggest an integration with Slack for team updates.,feature_request
+Could the product support custom fields on projects?,feature_request
+We would like an option to schedule report delivery.,feature_request
+Please consider adding a read only guest role.,feature_request
+It would be helpful to have a weekly summary view.,feature_request
+Can you add tags and folders for organizing files?,feature_request
+I want to suggest a new time tracking feature.,feature_request
+Could you add a public API for integrations?,feature_request

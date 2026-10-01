@@ -1,0 +1,625 @@
+{
+  "data_type": "Hand-authored synthetic examples; not real-world performance",
+  "training_examples": 80,
+  "thresholds": {
+    "min_score": 0.45,
+    "min_margin": 0.15,
+    "min_coverage": 0.35
+  },
+  "validation": {
+    "examples": 16,
+    "raw_accuracy": 1.0,
+    "raw_macro_f1": 1.0,
+    "routing_coverage": 0.875,
+    "accepted_accuracy": 1.0,
+    "labels": [
+      "billing",
+      "account_access",
+      "bug_report",
+      "feature_request"
+    ],
+    "confusion_matrix": [
+      [
+        4,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        4,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        4,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        4
+      ]
+    ],
+    "classification_report": {
+      "account_access": {
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1-score": 1.0,
+        "support": 4.0
+      },
+      "billing": {
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1-score": 1.0,
+        "support": 4.0
+      },
+      "bug_report": {
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1-score": 1.0,
+        "support": 4.0
+      },
+      "feature_request": {
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1-score": 1.0,
+        "support": 4.0
+      },
+      "accuracy": 1.0,
+      "macro avg": {
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1-score": 1.0,
+        "support": 16.0
+      },
+      "weighted avg": {
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1-score": 1.0,
+        "support": 16.0
+      }
+    },
+    "review_or_error_cases": [
+      {
+        "text": "The password recovery link says it is no longer valid.",
+        "expected": "account_access",
+        "prediction": {
+          "suggested_label": "account_access",
+          "route": "manual_review",
+          "model_score": 0.6097889698165722,
+          "margin": 0.44548103230861735,
+          "vocabulary_coverage": 0.3333333333333333,
+          "reason": "Too many unfamiliar words",
+          "evidence": [
+            {
+              "term": "password",
+              "contribution": 0.9829
+            },
+            {
+              "term": "link",
+              "contribution": 0.33
+            }
+          ],
+          "scores": {
+            "account_access": 0.6097889698165722,
+            "billing": 0.11283427315831278,
+            "bug_report": 0.16430793750795478,
+            "feature_request": 0.1130688195171603
+          },
+          "subject": "Thanks for contacting support",
+          "draft": "Thank you for reaching out. Could you briefly describe the problem or request you would like help with? A team member will review your message."
+        }
+      },
+      {
+        "text": "The app crashes when I add an attachment.",
+        "expected": "bug_report",
+        "prediction": {
+          "suggested_label": "bug_report",
+          "route": "manual_review",
+          "model_score": 0.37598986913054916,
+          "margin": 0.0070905798832778255,
+          "vocabulary_coverage": 0.75,
+          "reason": "Low model score; Competing intent predictions",
+          "evidence": [
+            {
+              "term": "app",
+              "contribution": 0.2696
+            },
+            {
+              "term": "crashes",
+              "contribution": 0.2237
+            },
+            {
+              "term": "app crashes",
+              "contribution": 0.2237
+            }
+          ],
+          "scores": {
+            "account_access": 0.13319636014351313,
+            "billing": 0.12191448147866638,
+            "bug_report": 0.37598986913054916,
+            "feature_request": 0.36889928924727133
+          },
+          "subject": "Thanks for contacting support",
+          "draft": "Thank you for reaching out. Could you briefly describe the problem or request you would like help with? A team member will review your message."
+        }
+      }
+    ]
+  },
+  "test": {
+    "examples": 24,
+    "raw_accuracy": 1.0,
+    "raw_macro_f1": 1.0,
+    "routing_coverage": 0.5833333333333334,
+    "accepted_accuracy": 1.0,
+    "labels": [
+      "billing",
+      "account_access",
+      "bug_report",
+      "feature_request"
+    ],
+    "confusion_matrix": [
+      [
+        6,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        6,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        6,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        6
+      ]
+    ],
+    "classification_report": {
+      "account_access": {
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1-score": 1.0,
+        "support": 6.0
+      },
+      "billing": {
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1-score": 1.0,
+        "support": 6.0
+      },
+      "bug_report": {
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1-score": 1.0,
+        "support": 6.0
+      },
+      "feature_request": {
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1-score": 1.0,
+        "support": 6.0
+      },
+      "accuracy": 1.0,
+      "macro avg": {
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1-score": 1.0,
+        "support": 24.0
+      },
+      "weighted avg": {
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1-score": 1.0,
+        "support": 24.0
+      }
+    },
+    "review_or_error_cases": [
+      {
+        "text": "Our finance department needs the invoice from the last billing cycle.",
+        "expected": "billing",
+        "prediction": {
+          "suggested_label": "billing",
+          "route": "manual_review",
+          "model_score": 0.7245055458619177,
+          "margin": 0.6257817913181375,
+          "vocabulary_coverage": 0.3333333333333333,
+          "reason": "Too many unfamiliar words",
+          "evidence": [
+            {
+              "term": "billing",
+              "contribution": 0.8647
+            },
+            {
+              "term": "invoice",
+              "contribution": 0.6672
+            }
+          ],
+          "scores": {
+            "account_access": 0.08198230446745332,
+            "billing": 0.7245055458619177,
+            "bug_report": 0.09872375454378023,
+            "feature_request": 0.09478839512684861
+          },
+          "subject": "Thanks for contacting support",
+          "draft": "Thank you for reaching out. Could you briefly describe the problem or request you would like help with? A team member will review your message."
+        }
+      },
+      {
+        "text": "Could you explain the extra amount on our latest bill?",
+        "expected": "billing",
+        "prediction": {
+          "suggested_label": "billing",
+          "route": "manual_review",
+          "model_score": 0.4485656170316959,
+          "margin": 0.24661546935490886,
+          "vocabulary_coverage": 0.6666666666666666,
+          "reason": "Low model score",
+          "evidence": [
+            {
+              "term": "latest",
+              "contribution": 0.3357
+            },
+            {
+              "term": "explain",
+              "contribution": 0.3167
+            }
+          ],
+          "scores": {
+            "account_access": 0.16303060645642498,
+            "billing": 0.4485656170316959,
+            "bug_report": 0.20195014767678704,
+            "feature_request": 0.18645362883509206
+          },
+          "subject": "Thanks for contacting support",
+          "draft": "Thank you for reaching out. Could you briefly describe the problem or request you would like help with? A team member will review your message."
+        }
+      },
+      {
+        "text": "The card we use for payments has expired and needs replacing.",
+        "expected": "billing",
+        "prediction": {
+          "suggested_label": "billing",
+          "route": "manual_review",
+          "model_score": 0.37084175373624956,
+          "margin": 0.12241476560420089,
+          "vocabulary_coverage": 0.5,
+          "reason": "Low model score; Competing intent predictions",
+          "evidence": [
+            {
+              "term": "payments",
+              "contribution": 0.3001
+            },
+            {
+              "term": "card",
+              "contribution": 0.2237
+            }
+          ],
+          "scores": {
+            "account_access": 0.24842698813204867,
+            "billing": 0.37084175373624956,
+            "bug_report": 0.19527030602414763,
+            "feature_request": 0.1854609521075542
+          },
+          "subject": "Thanks for contacting support",
+          "draft": "Thank you for reaching out. Could you briefly describe the problem or request you would like help with? A team member will review your message."
+        }
+      },
+      {
+        "text": "I changed phones and now cannot pass the two factor sign in step.",
+        "expected": "account_access",
+        "prediction": {
+          "suggested_label": "account_access",
+          "route": "manual_review",
+          "model_score": 0.7291198666187059,
+          "margin": 0.6340459264162965,
+          "vocabulary_coverage": 0.3333333333333333,
+          "reason": "Too many unfamiliar words",
+          "evidence": [
+            {
+              "term": "sign",
+              "contribution": 1.0123
+            },
+            {
+              "term": "factor",
+              "contribution": 0.697
+            }
+          ],
+          "scores": {
+            "account_access": 0.7291198666187059,
+            "billing": 0.08595774247639931,
+            "bug_report": 0.0950739402024093,
+            "feature_request": 0.08984845070248557
+          },
+          "subject": "Thanks for contacting support",
+          "draft": "Thank you for reaching out. Could you briefly describe the problem or request you would like help with? A team member will review your message."
+        }
+      },
+      {
+        "text": "Can I replace the email that I use for logging in?",
+        "expected": "account_access",
+        "prediction": {
+          "suggested_label": "account_access",
+          "route": "manual_review",
+          "model_score": 0.6771013717318618,
+          "margin": 0.542806837742887,
+          "vocabulary_coverage": 0.25,
+          "reason": "Too many unfamiliar words",
+          "evidence": [
+            {
+              "term": "email",
+              "contribution": 1.5332
+            }
+          ],
+          "scores": {
+            "account_access": 0.6771013717318618,
+            "billing": 0.0880490307568253,
+            "bug_report": 0.1005550635223381,
+            "feature_request": 0.13429453398897478
+          },
+          "subject": "Thanks for contacting support",
+          "draft": "Thank you for reaching out. Could you briefly describe the problem or request you would like help with? A team member will review your message."
+        }
+      },
+      {
+        "text": "New tasks vanish as soon as the browser page is refreshed.",
+        "expected": "bug_report",
+        "prediction": {
+          "suggested_label": "bug_report",
+          "route": "manual_review",
+          "model_score": 0.3724979675362396,
+          "margin": 0.06893475115277498,
+          "vocabulary_coverage": 0.5714285714285714,
+          "reason": "Low model score; Competing intent predictions",
+          "evidence": [
+            {
+              "term": "page",
+              "contribution": 0.3036
+            },
+            {
+              "term": "browser",
+              "contribution": 0.2639
+            }
+          ],
+          "scores": {
+            "account_access": 0.1780395726256011,
+            "billing": 0.1458992434546947,
+            "bug_report": 0.3724979675362396,
+            "feature_request": 0.3035632163834646
+          },
+          "subject": "Thanks for contacting support",
+          "draft": "Thank you for reaching out. Could you briefly describe the problem or request you would like help with? A team member will review your message."
+        }
+      },
+      {
+        "text": "The upload bar never moves past halfway.",
+        "expected": "bug_report",
+        "prediction": {
+          "suggested_label": "bug_report",
+          "route": "manual_review",
+          "model_score": 0.5226499446513488,
+          "margin": 0.354676067350824,
+          "vocabulary_coverage": 0.2,
+          "reason": "Too many unfamiliar words",
+          "evidence": [
+            {
+              "term": "upload",
+              "contribution": 0.7855
+            }
+          ],
+          "scores": {
+            "account_access": 0.14532662546354136,
+            "billing": 0.16797387730052482,
+            "bug_report": 0.5226499446513488,
+            "feature_request": 0.16404955258458484
+          },
+          "subject": "Thanks for contacting support",
+          "draft": "Thank you for reaching out. Could you briefly describe the problem or request you would like help with? A team member will review your message."
+        }
+      },
+      {
+        "text": "Our charts are empty although the underlying data is present.",
+        "expected": "bug_report",
+        "prediction": {
+          "suggested_label": "bug_report",
+          "route": "manual_review",
+          "model_score": 0.27738944553016986,
+          "margin": 0.023460474665278286,
+          "vocabulary_coverage": 0.0,
+          "reason": "Too many unfamiliar words; Low model score; Competing intent predictions",
+          "evidence": [],
+          "scores": {
+            "account_access": 0.21603768045214422,
+            "billing": 0.2539289708648916,
+            "bug_report": 0.27738944553016986,
+            "feature_request": 0.2526439031527944
+          },
+          "subject": "Thanks for contacting support",
+          "draft": "Thank you for reaching out. Could you briefly describe the problem or request you would like help with? A team member will review your message."
+        }
+      },
+      {
+        "text": "It would save us time if we could edit many tasks at once.",
+        "expected": "feature_request",
+        "prediction": {
+          "suggested_label": "feature_request",
+          "route": "manual_review",
+          "model_score": 0.35561944153034586,
+          "margin": 0.01923845256697626,
+          "vocabulary_coverage": 0.75,
+          "reason": "Low model score; Competing intent predictions",
+          "evidence": [
+            {
+              "term": "tasks",
+              "contribution": 0.3926
+            },
+            {
+              "term": "time",
+              "contribution": 0.1199
+            }
+          ],
+          "scores": {
+            "account_access": 0.143873846448691,
+            "billing": 0.16412572305759354,
+            "bug_report": 0.3363809889633696,
+            "feature_request": 0.35561944153034586
+          },
+          "subject": "Thanks for contacting support",
+          "draft": "Thank you for reaching out. Could you briefly describe the problem or request you would like help with? A team member will review your message."
+        }
+      },
+      {
+        "text": "A keyboard shortcut to create tasks would be a welcome addition.",
+        "expected": "feature_request",
+        "prediction": {
+          "suggested_label": "feature_request",
+          "route": "manual_review",
+          "model_score": 0.4743262408010613,
+          "margin": 0.28361175147279993,
+          "vocabulary_coverage": 0.3333333333333333,
+          "reason": "Too many unfamiliar words",
+          "evidence": [
+            {
+              "term": "tasks",
+              "contribution": 0.4735
+            },
+            {
+              "term": "keyboard",
+              "contribution": 0.2614
+            }
+          ],
+          "scores": {
+            "account_access": 0.15596067727847465,
+            "billing": 0.1789985925922028,
+            "bug_report": 0.19071448932826138,
+            "feature_request": 0.4743262408010613
+          },
+          "subject": "Thanks for contacting support",
+          "draft": "Thank you for reaching out. Could you briefly describe the problem or request you would like help with? A team member will review your message."
+        }
+      }
+    ]
+  },
+  "review_challenge": {
+    "examples": 10,
+    "manual_review_recall": 0.7,
+    "missed_cases": [
+      {
+        "text": "Can you help me plan a vacation?",
+        "prediction": {
+          "suggested_label": "billing",
+          "route": "billing",
+          "model_score": 0.6079794393704396,
+          "margin": 0.41912616751208315,
+          "vocabulary_coverage": 0.6666666666666666,
+          "reason": "Passes demo routing thresholds; human approval still required",
+          "evidence": [
+            {
+              "term": "plan",
+              "contribution": 1.0195
+            },
+            {
+              "term": "help",
+              "contribution": 0.1481
+            }
+          ],
+          "scores": {
+            "account_access": 0.1888532718583565,
+            "billing": 0.6079794393704396,
+            "bug_report": 0.10493828848884201,
+            "feature_request": 0.0982290002823619
+          },
+          "subject": "Your billing inquiry",
+          "draft": "Thank you for contacting us about billing. Please share the invoice reference and a brief description of the charge or subscription change you want reviewed. Our team will check the details before confirming any next steps. Please do not include full payment card or bank account details."
+        }
+      },
+      {
+        "text": "I need a refund and cannot reset my password.",
+        "prediction": {
+          "suggested_label": "account_access",
+          "route": "account_access",
+          "model_score": 0.49752790451153406,
+          "margin": 0.20957728538405146,
+          "vocabulary_coverage": 1.0,
+          "reason": "Passes demo routing thresholds; human approval still required",
+          "evidence": [
+            {
+              "term": "password",
+              "contribution": 0.6877
+            },
+            {
+              "term": "reset",
+              "contribution": 0.3678
+            },
+            {
+              "term": "need",
+              "contribution": 0.1728
+            }
+          ],
+          "scores": {
+            "account_access": 0.49752790451153406,
+            "billing": 0.2879506191274826,
+            "bug_report": 0.10971871237297975,
+            "feature_request": 0.10480276398800352
+          },
+          "subject": "Help with account access",
+          "draft": "Thank you for reporting an account access issue. Please describe the sign-in step that fails and the exact error text, if any. Use the official account recovery flow when available. Never share passwords, recovery codes, or one-time authentication codes in a support message."
+        }
+      },
+      {
+        "text": "Please add dark mode and fix the crashing upload.",
+        "prediction": {
+          "suggested_label": "feature_request",
+          "route": "feature_request",
+          "model_score": 0.6723132208585981,
+          "margin": 0.5298751093948373,
+          "vocabulary_coverage": 0.6666666666666666,
+          "reason": "Passes demo routing thresholds; human approval still required",
+          "evidence": [
+            {
+              "term": "add",
+              "contribution": 0.5807
+            },
+            {
+              "term": "mode",
+              "contribution": 0.3169
+            },
+            {
+              "term": "dark mode",
+              "contribution": 0.1933
+            },
+            {
+              "term": "dark",
+              "contribution": 0.1933
+            },
+            {
+              "term": "add dark",
+              "contribution": 0.1933
+            }
+          ],
+          "scores": {
+            "account_access": 0.08675197247964406,
+            "billing": 0.09849669519799702,
+            "bug_report": 0.14243811146376084,
+            "feature_request": 0.6723132208585981
+          },
+          "subject": "Your product suggestion",
+          "draft": "Thank you for sharing your suggestion. Could you describe the task you are trying to accomplish and how the proposed feature would help? Our team can record that context for product review. This acknowledgment does not confirm a release date or roadmap commitment."
+        }
+      }
+    ]
+  }
+}

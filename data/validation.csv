@@ -1,0 +1,17 @@
+text,label
+The payment for our annual renewal was declined.,billing
+I need a receipt for last month's subscription fee.,billing
+Can you correct the address on my billing invoice?,billing
+I would like a refund for the second payment.,billing
+The password recovery link says it is no longer valid.,account_access
+My authenticator code is rejected when I sign in.,account_access
+I have been locked out and need to regain account access.,account_access
+Where do I request another email verification link?,account_access
+The dashboard freezes as soon as I open the chart.,bug_report
+Every CSV export produces a server error.,bug_report
+The app crashes when I add an attachment.,bug_report
+The save action reports success but my changes disappear.,bug_report
+Please consider a dark theme as a new feature.,feature_request
+Could you add custom fields to the task editor?,feature_request
+I suggest supporting recurring project templates.,feature_request
+An offline viewing option would be a useful addition.,feature_request
